@@ -1,0 +1,102 @@
+// Buttons
+//
+// Custom buttons for the docs.
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+// scss-docs-start btn-css-vars-example
+.btn-bd-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var;
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+  --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+  --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+}
+// scss-docs-end btn-css-vars-example
+
+.btn-bd-accent {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bd-accent);
+  --bs-btn-border-color: var(--bd-accent);
+  --bs-btn-hover-color: var(--bd-dark);
+  --bs-btn-hover-bg: var(--bd-accent);
+  --bs-btn-hover-border-color: var(--bd-accent);
+  --bs-btn-focus-shadow-rgb: var(--bd-accent-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
+  --bs-btn-active-border-color: var(--bs-btn-hover-border-color);
+}
+
+.btn-bd-light {
+  --btn-custom-color: {mix($bd-violet, $white, 75%)};
+
+  --bs-btn-color: var(--bs-gray-600);
+  --bs-btn-border-color: var(--bs-border-color);
+  --bs-btn-hover-color: var(--btn-custom-color);
+  --bs-btn-hover-border-color: var(--btn-custom-color);
+  --bs-btn-active-color: var(--btn-custom-color);
+  --bs-btn-active-bg: var(--bs-white);
+  --bs-btn-active-border-color: var(--btn-custom-color);
+  --bs-btn-focus-border-color: var(--btn-custom-color);
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+}
+
+.bd-btn-lg {
+  --bs-btn-border-radius: .5rem;
+
+  padding: .8125rem 2rem;
+}
+
+* {
+  box-sizing: border-box;
+} /*Ajustar cajas locas*/
+
+.parent {
+  width: 50%;
+  border: 5px solid #E18728;
+  float: left;
+}
+
+.child {
+  width: 90%;
+  padding: 20%;
+  border: 4px solid black;
+  margin: .5em auto;
+}
+
+.twins {
+  width: 50%;
+  padding: 1em;
+  border: 4px solid black;
+  float: left;
+}
+
+
+/* styling for Pen, not related to box-sizing or layout */
+
+body {
+  font-family: sans-serif;
+  font-size: 1.1em;
+}
+
+.buttons {
+  margin-bottom: .5em;
+}
+
+p:not(.intro) {
+  text-align: center;
+}
